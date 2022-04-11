@@ -13,9 +13,15 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-mustache'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.projectlombok:lombok'
+	implementation 'org.springframework.boot:spring-boot-starter-mustache'	//mustache template engine
+	implementation 'org.springframework.boot:spring-boot-starter-web'		//spring
+
+	implementation 'org.projectlombok:lombok'								//lombok
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'	//jpa
+
+	implementation 'com.h2database:h2'										//h2 database
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
